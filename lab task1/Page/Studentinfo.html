@@ -1,54 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Information</title>
+  <meta charset="UTF-8">
+  <title>Student Information</title>
 </head>
 <body>
+  <h2>Student Information</h2>
 
-    <div class="form-container">
-        <div class="form-header">Student Information</div>
-        
-        <form>
-            <div class="form-grid">
-                <!-- Row 1 -->
-                <div class="form-group">
-                    <label for="full-name">Full Name (Text)</label>
-                    <input type="text" id="full-name" placeholder="Enter your full name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="your.email@example.com">
-                </div>
+  <form>
+    <label for="fullname">Full Name (Text)</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
 
-                <!-- Row 2 -->
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter secure password">
-                </div>
-                <div class="form-group">
-                    <label for="age">Age (Number)</label>
-                    <input type="number" id="age" placeholder="Enter your age">
-                </div>
+    <label for="email">Email Address</label><br>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com"><br><br>
 
-                <!-- Row 3 -->
-                <div class="form-group">
-                    <label for="exp-date">Experiment Date</label>
-                    <input type="date" id="exp-date">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number (Tel)</label>
-                    <input type="tel" id="phone" placeholder="+880 XXXX XXXXXX">
-                </div>
-            </div>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter secure password"><br><br>
 
-            <div class="button-group">
-                <button type="submit" class="btn-submit">SUBMIT</button>
-                <button type="reset" class="btn-clear">CLEAR</button>
-            </div>
-        </form>
-    </div>
+    <label for="age">Age (Number)</label><br>
+    <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
 
+    <label for="expdate">Experiment Date</label><br>
+    <input type="date" id="expdate" name="expdate"><br><br>
+
+    <label for="phone">Phone Number (Tel)</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="+880 XXXX XXXXXX"><br><br>
+
+    <button type="submit">SUBMIT</button>
+    <button type="reset">CLEAR</button>
+  </form>
 </body>
 </html>
