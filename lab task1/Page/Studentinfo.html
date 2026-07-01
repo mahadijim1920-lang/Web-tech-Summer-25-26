@@ -3,31 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Student Information</title>
+  <link rel="stylesheet" href="../Design/design.css">
 </head>
 <body>
-  <h2>Student Information</h2>
-
-  <form>
-    <label for="fullname">Full Name (Text)</label><br>
-    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
-
-    <label for="email">Email Address</label><br>
-    <input type="email" id="email" name="email" placeholder="your.email@example.com"><br><br>
-
-    <label for="password">Password</label><br>
-    <input type="password" id="password" name="password" placeholder="Enter secure password"><br><br>
-
-    <label for="age">Age (Number)</label><br>
-    <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
-
-    <label for="expdate">Experiment Date</label><br>
-    <input type="date" id="expdate" name="expdate"><br><br>
-
-    <label for="phone">Phone Number (Tel)</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="+880 XXXX XXXXXX"><br><br>
-
-    <button type="submit">SUBMIT</button>
-    <button type="reset">CLEAR</button>
-  </form>
+  <div class="form-container">
+    <div class="form-header">Student Information</div>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fullname">Full Name (Text)</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter secure password">
+        </div>
+        <div class="form-group">
+          <label for="age">Age (Number)</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="expdate">Experiment Date</label>
+          <input type="date" id="expdate" name="expdate">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number (Tel)</label>
+          <input type="tel" id="phone" name="phone" placeholder="+880 XXXX XXXXXX">
+        </div>
+      </div>
+      <div class="button-row">
+        <button type="submit" class="btn-submit">SUBMIT</button>
+        <button type="reset" class="btn-clear">CLEAR</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
