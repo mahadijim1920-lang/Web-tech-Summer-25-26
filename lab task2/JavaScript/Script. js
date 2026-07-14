@@ -1,0 +1,40 @@
+let attempts = 0;
+let locked = false;
+
+function checkLogin() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  const message = document.getElementById("message");
+
+  if (locked) {
+    message.innerHTML = "Account is locked. Please wait 5 minutes.";
+    return;
+  }
+
+  if (username === "" || password === "") {
+    message.innerHTML = "Both fields are required.";
+    return;
+  }
+
+  if (username === "AIUB" && password === "$_student") {
+    message.innerHTML = "Successfully Logged In";
+    attempts = 0;
+    return;
+  }
+
+  attempts++;
+
+  if (attempts === 1) {
+    message.innerHTML = "You have 3 attempts left.";
+  } else if (attempts === 2) {
+    message.innerHTML = "You have 2 attempts left.";
+  } else if (attempts >= 3) {
+    message.innerHTML = "You have 1 attempt left. You are locked for 5 minutes.";
+    locked = true;
+
+   setTimeout(function () {
+      locked = false;
+      attempts = 0;
+    }, 5 * 60 * 1000);
+  }
+}
